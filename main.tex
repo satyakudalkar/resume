@@ -1,11 +1,6 @@
-% User's resume LaTeX
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+% Tailored Resume for Java Developer (Canada - BettingJobs JD)
 
-\documentclass[letterpaper,11pt]{article} % Set font size to 12pt
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,25 +13,11 @@
 \usepackage{fontawesome5}
 \usepackage[utf8]{inputenc}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
@@ -49,63 +30,20 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-% \newcommand{\classesList}[4]{
-%     \item\small{
-%         {#1 #2 #3 #4 \vspace{-2pt}}
-%   }
-% }
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-% \newcommand{\resumeSubSubheading}[2]{
-%     \item
-%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-%       \textit{\small#1} & \textit{\small #2} \\
-%     \end{tabular*}\vspace{-7pt}
-% }
-
-% \newcommand{\resumeProjectHeading}[2]{
-%     \item
-%     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-%       \small#1 & \textbf{\small #2}\\
-%     \end{tabular*}\vspace{-7pt}
-% }
-
-% \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]} 
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=0pt, parsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 \begin{document}
 
@@ -120,101 +58,56 @@
   }
 \end{center}
 
-
-\vspace{-14pt}
-%-----------Professional Summary-----------
+%-----------SUMMARY-----------
 \section{Professional Summary}
-
 \small{
-    \begingroup \setlength{\parskip}{2pt}
-    Senior Software Engineer with 6+ years of experience designing and delivering cloud-native backend systems and cross-platform SDKs. Expert in Java and Spring Boot, and deeply experienced in \textbf{Kotlin Multiplatform (Android, iOS, Web JS)} for building and maintaining SDKs used by downstream customers. Strong background in microservices, event-driven architectures, PCI-DSS requirements, and CI/CD (GitHub Actions, Jenkins, Changesets). Proven track record of troubleshooting client integrations, Experienced in Java 8+, Spring ecosystem, SQL optimization, multithreading, and performance tuning. Actively pursuing relocation to Canada under the Global Talent Stream and open to immediate international opportunities.
-    \endgroup
+  Java Developer with 6+ years of experience building high‑performance backend services, optimizing SQL-heavy systems, and delivering reliable enterprise platforms. Strong expertise in Java (8+), Spring Boot, REST design, SQL optimization, and building services from scratch. Experienced with PostgreSQL, MySQL, microservices, CI/CD, event-driven systems, and debugging performance bottlenecks. Comfortable working in Linux-based environments using Git, shell, and server-side tooling. Open to EST hours and relocation to Canada under GTS.
 }
-\vspace{-2pt}
 
-
-
-
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-  {AISSMS Institute of Information Technology}{2016 -- 2019}
-  {Bachelor of Engineering in Information Technology}{Pune, Maharashtra, India}
-
-\resumeSubheading
-  {PVPIT Budhgaon}{2013 -- 2016}
-  {Diploma in Computer Engineering}{Sangli, Maharashtra, India}
-
-\resumeSubHeadingListEnd
-\vspace{-10pt}
-%-----------Technical Skills-----------
+%-----------SKILLS-----------
 \section{Technical Skills}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=0pt]
-\small{\item{\textbf{Languages \& Frameworks:} Java, Kotlin, Spring Boot, Kotlin Multiplatform (KMP - Android/iOS/Web JS), REST APIs, Microservices, JUnit, Cucumber, Mockito}}
-\small{\item{\textbf{Cloud \& Infrastructure:} Google Cloud Platform (GCP), App Engine, Docker, Kubernetes (exposure), CI/CD: GitHub Actions, Jenkins, Changesets}}
-\small{\item{\textbf{Databases \& Messaging:} PostgreSQL, MySQL, Cassandra, BigQuery, Couchbase, Google Pub/Sub, NATS}}
-\small{\item{\textbf{Tools \& Practices:} Git, Maven, Gradle, Bitbucket, Rally, Agile, Automated testing, Semantic versioning, Release management}}
-\small{\item{\textbf{Security \& Compliance:} PCI DSS awareness, cryptographic APIs, secure key management}}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt]
+  \small{\item{\textbf{Languages:} Java 8+, Kotlin, SQL, Shell Scripting}}
+  \small{\item{\textbf{Frameworks:} Spring Boot, JPA/Hibernate, REST APIs, Microservices}}
+  \small{\item{\textbf{Databases:} PostgreSQL, MySQL, Cassandra (exposure), BigQuery, Snowflake (basic)}}
+  \small{\item{\textbf{Messaging:} NATS, Google Pub/Sub, Kafka (exposure)}}
+  \small{\item{\textbf{Tools:} Git, Bitbucket, Maven, CI/CD (GitHub Actions, Jenkins)}}
+  \small{\item{\textbf{Environment:} Linux servers, SSH, Docker (basic)}}
+  \small{\item{\textbf{Other:} OOP, SQL tuning, performance debugging, encryption basics}}
 \end{itemize}
 
-
-%-----------Certifications-----------
-% Define a custom list for certifications with a reduced item separation
-% \newlist{certifications}{itemize}{1}
-% \setlist[certifications]{label=\textbullet, topsep=0pt, itemsep=-2pt, leftmargin=*}
-
-% % Use the custom certifications list for your certifications section
-% \section{Certifications}
-% \begin{certifications}
-% \item {\textbf{Core Java and Android app development.}}  \hfill 
-%  \item {\textbf{React: The Complete Guide.}} \hfill 
-% \end{certifications}
-
-\vspace{-4pt}
 %-----------EXPERIENCE-----------
 \section{Work Experience}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-  {Senior Software Engineer}{Jan 2025 -- Present}
-  {Vonage}{Remote / Pune, India}
-  \vspace{0pt}
-  \resumeItemListStart
-    \resumeItem{Led development and maintenance of the core \textbf{Kotlin Multiplatform (KMP) SDK} across \textbf{Android, iOS, and Web JS}, ensuring feature parity and platform stability.}
-    \resumeItem{Implemented and executed comprehensive testing strategies (manual + automated) across platforms to catch platform-specific regressions prior to releases.}
-    \resumeItem{Owned the end-to-end SDK release process: semantic versioning, changelog management, automated validations, and publishing to platform registries.}
-    \resumeItem{Enhanced CI/CD validations using \textbf{GitHub Actions} and Changesets to enforce release hygiene and avoid breakages.}
-    \resumeItem{Collaborated directly with customer engineering teams to triage and resolve SDK integration issues, debug platform-specific bugs, and deliver timely fixes.}
-    \resumeItem{Conducted cross-team \textbf{code reviews} and provided technical guidance to improve code quality, observability, and stability.}
-  \resumeItemListEnd
-  
-\vspace{8pt}
+% VONAGE
+\resumeSubheading{Senior Software Engineer}{Jan 2025 -- Present}{Vonage}{Remote / Pune, India}
+\resumeItemListStart
+  \resumeItem{Developing backend logic and platform features in Java/Kotlin, contributing to scalable services and improving system stability.}
+  \resumeItem{Optimizing service logic and addressing performance bottlenecks through improved data access patterns, profiling, and refactoring.}
+  \resumeItem{Built CI/CD checks using GitHub Actions to enforce code quality, improve release hygiene, and reduce production defects.}
+  \resumeItem{Collaborate with senior engineers to align features with platform architecture and technical design goals.}
+  \resumeItem{Troubleshoot client integration issues, debug failures, and deliver fixes to ensure reliable customer-facing functionality.}
+\resumeItemListEnd
 
-\resumeSubheading
-  {Software Engineer II}{Jan 2022 -- Nov 2024}
-  {Mastercard}{Pune, India}
-    \vspace{0pt}
-  \resumeItemListStart
-    \resumeItem{Designed and developed \textbf{PCI-DSS compliant microservices} using \textbf{Spring Boot}, \textbf{NATS}, and \textbf{Axon}, enabling secure, event-driven payment processing across global markets.}
-    \resumeItem{Contributed to a major network switch launch in South Africa with \textbf{100\% Day-1 success}, supporting multiple customers and ensuring seamless deployment through robust CI/CD pipelines.}
-    \resumeItem{Built a reliable \textbf{store-and-forward} messaging system with scheduled retries using \textbf{PostgreSQL}, reducing downstream delivery failures.}
-    \resumeItem{Developed a \textbf{stream-to-batch} transformation service converting real-time Axon/NATS events into ISO-compliant batch files (T112, T113) for Mastercard settlements.}
-    \resumeItem{Integrated and extended \textbf{cryptographic APIs} for secure key management and card data protection, improving security.}
-  \resumeItemListEnd
+% MASTERCARD
+\resumeSubheading{Software Engineer II}{Jan 2022 -- Nov 2024}{Mastercard}{Pune, India}
+\resumeItemListStart
+  \resumeItem{Developed secure backend services using Java and Spring Boot for high-traffic, payment-processing platforms.}
+  \resumeItem{Improved SQL query performance and implemented safe DB access layers using PostgreSQL with optimized indexing strategies.}
+  \resumeItem{Built and maintained message-driven components using NATS and Axon, improving throughput and reliability.}
+  \resumeItem{Delivered store-and-forward and batch-processing logic for settlement workflows, ensuring consistency in distributed systems.}
+  \resumeItem{Integrated cryptographic APIs and implemented secure patterns aligned with PCI-DSS standards.}
+\resumeItemListEnd
 
-\vspace{8pt}
-
-\resumeSubheading
-  {Software Developer}{Jul 2019 -- Jan 2022}
-  {Bitwise}{Pune, India}
-    \vspace{0pt}
-  \resumeItemListStart
-    \resumeItem{Developed microservices on \textbf{GCP App Engine} to deliver real-time chargeback and settlement notifications for a unified commerce platform supporting \textbf{Google as a merchant}.}
-    \resumeItem{Built scalable data-processing components using \textbf{Google Pub/Sub} and \textbf{Spring Boot}, enabling reliable event ingestion and downstream communication.}
-    \resumeItem{Led development of the internal EI Web App using \textbf{Java}, \textbf{Spring Boot}, \textbf{CloudSQL}, and \textbf{GMail API}, improving team communication and operational visibility across engineering groups.}
-  \resumeItemListEnd
+% BITWISE
+\resumeSubheading{Software Developer}{Jul 2019 -- Jan 2022}{Bitwise}{Pune, India}
+\resumeItemListStart
+  \resumeItem{Built and deployed Java-based microservices on GCP App Engine for real‑time transaction and settlement notification systems.}
+  \resumeItem{Designed SQL-backed data pipelines using Google Pub/Sub and Spring Boot for reliable event ingestion.}
+  \resumeItem{Developed internal tooling using Java, Spring Boot, CloudSQL, and Gmail API to streamline engineering workflows.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
 \end{document}
